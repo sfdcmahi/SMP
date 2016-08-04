@@ -1,0 +1,43 @@
+.THIS.theme-wrap {
+  max-width: 1140px;
+  margin: 0 auto; }
+  .THIS.theme-wrap .header-container {
+    position: relative;
+    min-height: 90px; }
+    .THIS.theme-wrap .header-container .container {
+      min-width: 900px; }
+      .THIS.theme-wrap .header-container .container:after {
+        content: '';
+        display: table;
+        clear: both; }
+      .THIS.theme-wrap .header-container .container .logo-container {
+        position: absolute;
+        left: 100px;
+        top: 0; }
+        @media (max-width: 1080px) {
+          .THIS.theme-wrap .header-container .container .logo-container {
+            left: 0; } }
+      .THIS.theme-wrap .header-container .container .navBar-container {
+        text-align: center;
+        width: 100%; }
+        .THIS.theme-wrap .header-container .container .navBar-container .selfServiceIcon[data-icon]:before {
+          content: "HOME";
+          font-family: inherit;
+          font-size: inherit;
+          font-weight: inherit; }
+      .THIS.theme-wrap .header-container .container .profileMenu-container {
+        position: absolute;
+        top: 0;
+        right: 100px;
+        min-width: 200px; }
+        @media (max-width: 1080px) {
+          .THIS.theme-wrap .header-container .container .profileMenu-container {
+            right: 0; } }
+        .THIS.theme-wrap .header-container .container .profileMenu-container .profileMenu-wrap {
+          position: absolute;
+          top: 0;
+          right: 0; }
+  .THIS.theme-wrap .footer-container {
+    background: lightcoral; }
+
+/*# sourceMappingURL=temp.css.map */

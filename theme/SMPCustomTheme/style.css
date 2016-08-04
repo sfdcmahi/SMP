@@ -1,0 +1,316 @@
+/*reset*/
+.THIS p {
+    margin: 0;
+}
+
+.THIS img {
+    vertical-align: top;
+}
+
+/*helper*/
+.THIS .container {
+    margin: 0 auto;
+    max-width: 1280px;
+    min-width: 320px;
+    height: 100%;
+    /*expand height of container*/
+    position: relative;
+}
+
+/*theme*/
+.THIS {
+    font-family: Helvetica;
+    font-weight: normal;
+    margin: 0;
+    position: relative;
+
+}
+
+.THIS.smpHome .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 90px;
+    width: 100%;
+    background-color: transparent;
+}
+
+.THIS .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 90px;
+    width: 100%;
+    color: #000;
+    background-color: white;
+}
+
+.THIS.smpHome .menuItemLink {
+    color: #fff !important;
+}
+
+.THIS .menuItemLink {
+    color: #000 !important;
+}
+
+.THIS.footer {
+    height: 50px;
+    background: #a32020;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 14px 0 18px 107px;
+    /* for test only*/
+    color: #fff;
+}
+
+.THIS.smpHome .pwcWhiteLogo {
+    display: block;
+    height: 80px;
+    background: url("{!$Resource.pwcWhiteLogo}")
+}
+
+.THIS.smpHome .pwcWhiteLogo img {
+    height: 100%
+}
+
+.THIS .pwcWhiteLogo {
+    display: block;
+    height: 90px;
+}
+
+.THIS .pwcWhiteLogo img {
+    height: 80%
+}
+
+/* header 各主要容器 */
+.THIS .c-logo, .THIS .navBar, .THIS .profileMenu {
+    position: absolute;
+}
+
+.THIS .c-logo {
+    left: 104px;
+    top: 14px;
+}
+
+.THIS .navBar {
+    left: 184px;
+    top: 34px;
+}
+
+.THIS .profileMenu {
+    right: 104px;
+    top: 34px;
+}
+@media (max-width:900px){
+    .THIS .c-logo {
+        left: 40px;
+    }
+
+    .THIS .navBar {
+        padding-left:0 !important;
+        left: 128px;
+    }
+
+    .THIS .profileMenu {
+        right: 0px;
+        top:0;
+
+    }
+}
+
+
+.THIS .profileMenu > div {
+    display: inline-block;
+}
+
+.THIS .profileMenu > span {
+    margin-right: 20px;
+}
+
+.THIS.smpHome .profileMenu svg {
+    fill: white;
+}
+
+.THIS .profileMenu svg {
+    fill: black;
+}
+
+/*custmize navbar*/
+.THIS .navBar {
+    padding-left: 73px;
+    max-width: 700px;
+    width: 100%;
+}
+
+.THIS .menu-list-item:nth-child(2) {
+    margin-top: 20px;
+}
+
+.THIS .menu-list-item:nth-child(3) {
+    margin-top: 20px;
+}
+
+.THIS .pwc-logo {
+    width: 90px;
+    margin-right: 50px;
+}
+
+.THIS .menu-list-item, .THIS .menu-item {
+    float: left;
+}
+
+.THIS .menuItemLink {
+    color: #fff;
+    font-size: 14px;
+    font-family: Helvetica;
+    padding: 10px;
+    margin: 0 4px;
+}
+
+.THIS .header .menuItemLink:hover {
+    background: #db536a !important;
+}
+
+.THIS .forceCommunityNavigationMenu {
+    background: none;
+    border: none;
+}
+
+/*----------------------------------------------------------------------------*\
+Headhesive Specific Styles
+/*----------------------------------------------------------------------------*/
+
+/**
+* Headhesive element clone
+* > `clone` class for the cloned element:
+*
+* @example
+* var options = {
+*   classes {
+*     clone: 'banner--clone';
+*   }
+* }
+*/
+.THIS.smpHome .banner--clone {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/**
+* Headhesive stick
+* > `stick` class for the cloned element:
+*
+* @example
+* var options = {
+*   classes {
+*     stick: 'banner--stick';
+*   }
+* }
+*/
+.THIS.smpHome .banner--stick:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: .6;
+    z-index: -9;
+
+}
+
+.THIS.smpHome .banner--stick {
+    /* Required styles */
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    /* Additional styles
+    background: #000;
+    opacity:0.6;
+
+    */
+
+    /* Translate -100% to move off screen */
+    /*-webkit-transform: translateY(-100%);*/
+    /*-ms-transform: translateY(-100%);*/
+    /*transform: translateY(-100%);*/
+
+    /* Animations */
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    /* Translate back to 0%; */
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+
+}
+
+/**
+* Headhesive unstick
+* > `unstick` class for the cloned element:
+*
+* @example
+* var options = {
+*   classes {
+*     unstick: 'banner--unstick';
+*   }
+* }
+*/
+.THIS.smpHome .banner--unstick {
+    /* Not required to use, but could be useful to have */
+}
+
+/* Swiper */
+.THIS .swiper-container {
+    height: 500px;
+    width: 100%;
+}
+
+.THIS .forceCommunityNavigationMenu .menuItemLink {
+    border-radius: 8px;
+}
+
+.THIS .forceCommunityNavigationMenu .menuItemLink:hover {
+    color: #fff;
+    background-color: #db536a;
+}
+
+.THIS .forceCommunityNavigationMenu .menuItem.current .menuItemLink {
+    color: #fff;
+    background-color: #db536a;
+}
+
+.THIS #navigationMenu > li:nth-child(1) {
+    display: none;
+}
+
+.THIS .forceCommunityNavigationMenu .menuItemLink:hover,
+.THIS .forceCommunityNavigationMenu .menuItemLink:focus,
+.THIS .forceCommunityNavigationMenu .menuItemLink.triggerLink:hover,
+.THIS .forceCommunityNavigationMenu .menuItemLink.triggerLink:focus,
+.THIS .forceCommunityNavigationMenu .menuItem.current .menuItemLink,
+.THIS .forceCommunityNavigationMenu .menuItem.current .menuItemLink.triggerLink {
+    background-color: #db536a;
+    color: white;
+    text-decoration: none;
+}
+
+.THIS #unreadMsgCount {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    background: #eb8c00;
+    border-radius: 7px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 12px;
+}

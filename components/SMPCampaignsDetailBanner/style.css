@@ -1,0 +1,45 @@
+.THIS {
+    height:294px;
+    background-image:url(http://placehold.it/1280x300);
+    overflow:hidden;
+    position:relative;
+}
+
+.THIS .primary-info{
+    position:absolute;
+    top:180px;
+    left:50%;
+
+}
+.THIS .primary-info .info-item{
+    display:inline-block;
+    line-height:30px;
+    background:#fff;
+    padding:20px;
+}
+.THIS .primary-info .info-item h3{
+    color:#a32020;
+    font-weight:800;
+}
+.THIS .primary-info .duration:after{
+    content: '';
+    display: inline-block;
+    height: 80%;
+    width: 1px;
+    background: #a1a1a1;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+}
+
+.THIS.navMap{
+    height:90px;
+    background:#db536a;
+}
+.THIS.navMap h2{
+    margin-left:205px;
+    line-height:90px;
+    color:#fff;
+    font-weight:800;
+}
+

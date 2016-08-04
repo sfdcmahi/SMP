@@ -1,0 +1,40 @@
+.THIS {
+}
+
+.THIS .swiper-wrapper {
+    position: relative;
+}
+
+.THIS .swiper-pagination-bullet-active {
+    background: #db536a !important;
+}
+
+.THIS .swiper-pagination-bullet {
+    width: 12px !important;
+    height: 12px !important;
+}
+
+.THIS .swiper-wrapper .info-wrap {
+    color: #fff;
+    z-index: 99;
+    width: 420px;
+    max-height: 330px;
+    min-height: 250px;
+    position: absolute;
+    background: #000;
+    opacity: 0.6;
+    right: 104px;
+    top: 170px;
+    padding: 18px;
+}
+
+.THIS .swiper-wrapper .info-wrap h1 {
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 20px;
+    margin-bottom: 28px;
+}
+
+.THIS .swiper-wrapper .info-wrap p {
+    line-height: 22px;
+}

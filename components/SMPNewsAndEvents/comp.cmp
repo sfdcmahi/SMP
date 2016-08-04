@@ -1,0 +1,42 @@
+<aura:component controller="SMPNewsAndEventsCtrl" implements="forceCommunity:availableForAllPageTypes" access="global">
+    <ltng:require scripts="{!$Resource.swiperJs+'/swiper.js'}" afterScriptsLoaded="{!c.afterSwiperLoaded}"/>
+    <ltng:require styles="{!$Resource.swiperJs+'/swiper.css'}"/>
+    <ltng:require styles="/resource/slds090/assets/styles/salesforce-lightning-design-system.min.css"/>
+
+
+    <aura:attribute name="news" type="Object[]" description="all news is in here"/>
+    <aura:attribute name="isNewsLoaded" type="Boolean"/>
+
+    <div class="slds-grid" style="color:#fff;">
+        <c:svg class="slds-input__icon slds-icon-text-default icon newsIcon"
+               xlinkHref="/resource/slds080/assets/icons/standard-sprite/svg/symbols.svg#news"/>
+        <div class="slds-size--6-of-7 slds-col swiper-container">
+            <div class="recommendationsContent swiper-wrapper">
+                <aura:iteration items="{!v.news}" var="oneNews">
+
+                    <div class="swiper-slide">
+                        <p class="rowHeader ">
+                            NEWS AND EVENTS
+                        </p>
+                        <div class="title">
+                            <p class="rowSubHeader ">
+                                {!oneNews.Name}
+                            </p>
+                            <p class="rowContent ">
+                                <aura:unescapedHtml value="{!oneNews.Details__c}"/>
+                            </p>
+                        </div>
+                    </div>
+
+
+                </aura:iteration>
+
+
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="slds-size--1-of-7 slds-col">
+        </div>
+    </div>
+</aura:component>

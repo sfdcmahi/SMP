@@ -1,0 +1,69 @@
+<aura:component implements="forceCommunity:themeLayout">
+    <aura:attribute name="navBar" type="Aura.Component[]"/>
+    <aura:attribute name="profileMenu" type="Aura.Component[]"/>
+    <!--<aura:attribute name="logoPath" type="String"/>-->
+    <!--<ltng:require scripts="{!$Resource.headhensiveJs}" afterScriptsLoaded="{!c.headInit}"/>-->
+    <!--<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>-->
+
+    <c:SMPThemePageHelper/>
+    <div class="theme-wrap">
+
+
+        <div class="header-container">
+            <div class="container">
+                <span class="logo-container">
+                    <a class="pwcWhiteLogo">
+                        PWC
+                        <!--<img src="{!$Resource.pwcWhiteLogo}" alt="pwc-logo"/>-->
+                    </a>
+                </span>
+                <!--<span class="navBar-container">{!v.navBar}</span>-->
+                <span class="navBar-container">
+                    {!v.navBar}
+                    <!--<ul>-->
+                        <!--<li><a href="#">HOME</a></li>-->
+                        <!--<li><a href="#">HOME</a></li>-->
+                        <!--<li><a href="#">HOME</a></li>-->
+                        <!--<li><a href="#">HOME</a></li>-->
+                        <!--<li><a href="#">HOME</a></li>-->
+                        <!--<li><a href="#">HOME</a></li>-->
+                        <!--<li><a href="#">HOME</a></li>-->
+                    <!--</ul>-->
+                </span>
+                <span class="profileMenu-container">
+                    <span class="slds-icon_container icon-wrap">
+                        <c:svg class="slds-icon slds-icon--small "
+                               xlinkHref="/resource/slds080/assets/icons/utility-sprite/svg/symbols.svg#search"/>
+                    </span>
+                    <span class="slds-icon_container icon-wrap">
+                        <span id="unreadMsgCount">5</span>
+                        <c:svg class="slds-icon slds-icon--medium"
+                               xlinkHref="/resource/slds080/assets/icons/custom-sprite/svg/symbols.svg#custom53"/>
+                    </span>
+                    <span class="profileMenu-wrap">
+                          {!v.profileMenu}
+                    </span>
+
+
+
+                </span>
+            </div>
+
+
+        </div>
+
+        <div class="page">
+            <div class="container">
+                {!v.body}
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <p>©2000-2016,Sam's West,Inc.All rights reserved.</p>
+            </div>
+        </div>
+
+    </div>
+</aura:component>

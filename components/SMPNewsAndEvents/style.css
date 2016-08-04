@@ -1,0 +1,83 @@
+/* Buttons styles */
+.THIS {
+    position: relative;
+    color: black;
+    height: 100%;
+}
+
+.THIS .swiper-container {
+    height: 250px;
+}
+
+/* My campaigns styles */
+
+.THIS .recommendationsContent {
+    width: 90%;
+}
+
+.THIS .rowHeader {
+    font-family: "Helvetica Neue";
+    font-size: 20px;
+    color: #db536a;
+    font-weight: bold;
+    margin-top: 1.25rem;
+}
+
+.THIS .rowSubHeader {
+    font-weight: bold;
+    color: black;
+}
+
+.THIS .rowContent {
+    color: black;
+    white-space: normal;
+    margin-top: 0.5rem;
+}
+
+.THIS .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: 25px;
+    text-align: left;
+}
+
+.THIS .title {
+    margin-top: 1.25rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.THIS .title a {
+    font-size: 14px;
+
+}
+
+.THIS .subTitle {
+    font-size: 12px;
+    font-style: italic;
+
+}
+
+.THIS .fieldValue {
+
+}
+
+.THIS .lineDraw {
+    width: 100%;
+    height: 0.0625rem;
+    margin-top: 0.625rem;
+
+}
+
+/* Icon styles */
+
+.THIS .newsIcon.icon {
+    fill: #a32020;
+    height: 60px;
+    width: 70px;
+    margin: 2.5rem 1.25rem;
+}
+
+/* pagation */
+.THIS .swiper-pagination-bullet-active {
+    background: #db536a !important;
+}

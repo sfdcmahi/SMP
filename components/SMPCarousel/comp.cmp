@@ -1,0 +1,36 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" controller="SMPBannerHeadingCtrl">
+    <ltng:require scripts="{!$Resource.swiperJs+'/swiper.js'}" afterScriptsLoaded="{!c.afterSwiperLoaded}"/>
+    <ltng:require styles="{!$Resource.swiperJs+'/swiper.css'}"/>
+
+    <aura:attribute name="slides" type="Object[]" required="false"/>
+    <aura:attribute name="isSlidesLoaded" type="Boolean" default="false"/>
+    <aura:attribute name="isDoneRendering" type="Boolean" required="false"/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:handler name="change" value="{!v.slides}" action="{!c.slidesChanged}"/>
+
+
+    <!-- Swiper -->
+    <div class="swiper-container swiper-banner">
+
+        <div class="swiper-wrapper">
+            <aura:renderIf isTrue="{!v.slides.length > 0}">
+                <aura:iteration items="{!v.slides}" var="slide">
+                    <div class="swiper-slide">
+                        <img src="{!slide.bannerImage}"/>
+                        <div class="info-wrap">
+                            <h4>{!slide.bannerHeading.Title__c}</h4>
+                            <h1>{!slide.bannerHeading.Heading_For_Banner__c}</h1>
+                            <p>{!slide.bannerHeading.Description__c}</p>
+                        </div>
+                    </div>
+                </aura:iteration>
+            </aura:renderIf>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+
+</aura:component>

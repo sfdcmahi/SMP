@@ -1,0 +1,45 @@
+<aura:component implements="forceCommunity:themeLayout">
+    <aura:attribute name="navBar" type="Aura.Component[]" required="false" />
+    <aura:attribute name="profileMenu" type="Aura.Component[]" />
+    <aura:attribute name="logoPath" type="String" />
+    <ltng:require scripts="{!$Resource.headhensiveJs}" afterScriptsLoaded="{!c.headInit}"  />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+    <c:SMPThemePageHelper />
+    <div  style="z-index:999;">
+        <div class="header">
+            <div class="container">
+                <span class="c-logo">
+                    <a class="pwcWhiteLogo">
+                        <!--<img  src="{!v.logoPath}" alt="pwc-logo"/>-->
+                        <img  src="{!$Resource.pwcWhiteLogo}" alt="pwc-logo"/>
+                    </a>
+                </span>
+                <span class="navBar" >{!v.navBar}</span>
+                <span class="profileMenu">
+                    <span class="slds-icon_container">
+                        <c:svg class="slds-icon slds-icon--small " xlinkHref="/resource/slds080/assets/icons/utility-sprite/svg/symbols.svg#search" />
+                    </span>
+                    <span class="slds-icon_container" style="position:relative;">
+                        <span id="unreadMsgCount">5</span>
+                        <c:svg class="slds-icon slds-icon--medium" xlinkHref="/resource/slds080/assets/icons/custom-sprite/svg/symbols.svg#custom53" />
+                    </span>
+                    {!v.profileMenu}
+                </span>
+            </div>
+
+        </div>    </div>
+    <div class="page">
+        <div class="container">
+
+            {!v.body}
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="container">
+            <p>©2000-2016,Sam's West,Inc.All rights reserved.</p>
+        </div>
+    </div>
+
+</aura:component>

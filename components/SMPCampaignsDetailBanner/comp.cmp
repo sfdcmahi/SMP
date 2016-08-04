@@ -1,0 +1,20 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes">
+    <!-- <aura:secondaryHeaderHelper/> -->
+    <aura:attribute name="routerTitle" type="String" default="Home" />
+    <div class="navMap">
+        <h2>{!v.routerTitle}</h2>
+    </div>
+
+    <div class="program-details-banner-wrap">
+        <div class="primary-info">
+            <span class="duration info-item">
+            	<h3>Duration</h3>
+                <p>Aug 12,2016 - Oct 11,2016</p>
+            </span>
+            <span class="register-till info-item">
+                <h3>Register Till</h3>
+                <p>Jul 31,2016(5 days to go)</p>
+            </span>
+        </div>
+    </div>
+</aura:component>
