@@ -1,0 +1,23 @@
+<aura:component implements="forceCommunity:Layout" access="global">
+
+    <ltng:require styles="/resource/slds090/assets/styles/salesforce-lightning-design-system.min.css"/>
+
+    <aura:attribute name="header" type="Aura.Component[]" required="false" />
+    <aura:attribute name="content" type="Aura.Component[]" required="false" />
+    <aura:attribute name="footer" type="Aura.Component[]" required="false" />
+
+    <div class="container">
+        <div class="slds-col--padded" style="margin-top: 90px;">
+            {!v.header}
+        </div>
+        <div class="slds-col--padded content">
+            {!v.content}
+        </div>
+        <div class="slds-col--padded footer" >
+            <div class="fixedFooter">
+                {!v.footer}
+            </div>
+        </div>
+    </div>
+
+</aura:component>

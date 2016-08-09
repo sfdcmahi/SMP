@@ -1,0 +1,29 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" >
+    <ltng:require styles="/resource/slds090/assets/styles/salesforce-lightning-design-system.min.css"/>
+    <aura:attribute name="type" type="String" default="default" />
+
+    <div class="default-wrap">
+        <p class="title">Others ara also looking at</p>
+        <div class="slds-grid slds-grid--pull-padded">
+
+            <div class="card slds-col--padded">
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <div class="slds-badge h-badge">lorem</div>
+                <p>Duration:Sep 1 2016-Now 15 2016</p>
+                <p>5 Days to Register</p>
+            </div>
+            <div class="card card slds-col--padded">
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <div class="slds-badge h-badge">lorem</div>
+                <p>Duration:Sep 1 2016-Now 15 2016</p>
+                <p>5 Days to Register</p>
+            </div>
+            <div class="card card slds-col--padded">
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <div class="slds-badge h-badge">lorem</div>
+                <p>Duration:Sep 1 2016-Now 15 2016</p>
+                <p>5 Days to Register</p>
+            </div>
+        </div>
+    </div>
+</aura:component>

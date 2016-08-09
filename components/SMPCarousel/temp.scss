@@ -37,5 +37,22 @@
       height: 12px !important;
     }
   }
+
+  .background_fill {
+    overflow: hidden;
+    position: relative;
+    color: red;
+  }
+  .background_fill:before {
+    background-color: white;
+    background-size: cover;
+    z-index: -3;
+    content: " ";
+    position: fixed;
+    background: url('http://www.lausanneworldpulse.com/pdfs/brierley_map_0507.jpg') no-repeat center center;
+    will-change: transform;
+    width: 100%;
+    height: 100%;
+  }
 }
 
